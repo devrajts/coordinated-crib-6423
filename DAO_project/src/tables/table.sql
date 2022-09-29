@@ -44,3 +44,63 @@ mysql> desc crimestatus;
 | status | varchar(10) | YES  |     | NULL    |       |
 +--------+-------------+------+-----+---------+-------+
 2 rows in set (0.00 sec)
+
+mysql> insert into crimedetails values("Raj","2020-12-01","RajajiNagar","bank Robery",null,"suspect with his mask on and was carrying a gun threatened bank manager for money");
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into crimedetails values("john","2022-09-29","Electronic city","Hit and Run","90 years old man","suspect was over speeding in a residential area, hit an old man and escaped from the crime scene");
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into crimedetails values("Cena","2022-09-15","Kormangala","Murder","opposite gang member","suspect killed rival gang member with the knife");
+Query OK, 1 row affected (0.12 sec)
+
+mysql> select * from crimedetails;
++-------------+-------------+-----------------+-------------+----------------------+--------------------------------------------------------------------------------------------------+
+| suspectName | dateOfCrime | place           | description | victims              | detailedDescription                                                                              |
++-------------+-------------+-----------------+-------------+----------------------+--------------------------------------------------------------------------------------------------+
+| Cena        | 2022-09-15  | Kormangala      | Murder      | opposite gang member | suspect killed rival gang member with the knife                                                  |
+| john        | 2022-09-29  | Electronic city | Hit and Run | 90 years old man     | suspect was over speeding in a residential area, hit an old man and escaped from the crime scene |
+| Raj         | 2020-12-01  | RajajiNagar     | bank Robery | NULL                 | suspect with his mask on and was carrying a gun threatened bank manager for money                |
++-------------+-------------+-----------------+-------------+----------------------+--------------------------------------------------------------------------------------------------+
+3 rows in set (0.00 sec)
+
+mysql> insert into criminalinformation values("Cena",29,"Male","Kormangala","Stiches on his face","Kormangala","Murder");
+Query OK, 1 row affected (0.18 sec)
+
+mysql> insert into criminalinformation values("John",35,"Male","Jayanagar","Brown eyes","Electronic city","Hit and Run");
+Query OK, 1 row affected (0.12 sec)
+
+mysql> insert into criminalinformation values("Raj",32,"Male","Kengeri","Mole on right face","Rajajinagar","bank robery");
+Query OK, 1 row affected (0.03 sec)
+
+mysql> select *  from criminalinformation;
++------+------+--------+------------+---------------------+-----------------+---------------+
+| name | age  | gender | address    | identifyingMarks    | areaOfCrime     | attachedCrime |
++------+------+--------+------------+---------------------+-----------------+---------------+
+| Cena |   29 | Male   | Kormangala | Stiches on his face | Kormangala      | Murder        |
+| John |   35 | Male   | Jayanagar  | Brown eyes          | Electronic city | Hit and Run   |
+| Raj  |   32 | Male   | Kengeri    | Mole on right face  | Rajajinagar     | bank robery   |
++------+------+--------+------------+---------------------+-----------------+---------------+
+3 rows in set (0.00 sec)
+
+mysql> insert into crimestatus values("Cena","Unsolved");
+Query OK, 1 row affected (0.13 sec)
+
+mysql> insert into crimestatus values("John","Unsolved");
+Query OK, 1 row affected (0.13 sec)
+
+mysql> insert into crimestatus values("Raj","Solved");
+Query OK, 1 row affected (0.04 sec)
+
+mysql> select * from crimestatus;
++-------+----------+
+| cname | status   |
++-------+----------+
+| Cena  | Unsolved |
+| John  | Unsolved |
+| Raj   | Solved   |
++-------+----------+
+3 rows in set (0.00 sec)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
