@@ -38,9 +38,22 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.getStatus">
+  <component name="RunManager" selected="Application.getStatusCount">
     <configuration name="AllCriminals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Dao_project.usercase.AllCriminals" />
+      <module name="DAO_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dao_project.usercase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AreaWiseCrime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dao_project.usercase.AreaWiseCrime" />
       <module name="DAO_project" />
       <extension name="coverage">
         <pattern>
@@ -78,8 +91,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="getStatusCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dao_project.usercase.getStatusCount" />
+      <module name="DAO_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dao_project.usercase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.getStatusCount" />
+        <item itemvalue="Application.AreaWiseCrime" />
         <item itemvalue="Application.getStatus" />
         <item itemvalue="Application.AllCriminals" />
         <item itemvalue="Application.CriminalName" />
