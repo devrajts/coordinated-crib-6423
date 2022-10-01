@@ -143,4 +143,25 @@ public class CrimeDaoImpl implements CrimeDao{
         }
         return  result;
     }
+
+
+
+    @Override
+    public int getNumberOfCrimeInCurrentMonth() throws CriminalException {
+        int result = 0;
+        try (Connection cn = DBUtil.provideConnection()) {
+            PreparedStatement ps = cn.prepareStatement("select count(description) Number from crimeDetails where month(dateOfCrime)=9;");
+
+            ResultSet rs = ps.executeQuery();
+
+            if(rs.next()){
+                result = rs.getInt("Number");
+            }else {
+                throw new CriminalException("Crimes does not exists in the system");
+            }
+        } catch (SQLException e) {
+            throw new CriminalException(e.getMessage());
+        }
+        return  result;
+    }
 }

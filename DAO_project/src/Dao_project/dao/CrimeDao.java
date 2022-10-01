@@ -10,10 +10,12 @@ public interface CrimeDao {
     public String getCriminalName(String crime)throws CriminalException;
     public List<Criminal> getAllCriminalDetails() throws CriminalException;
     public String getCrimeStatus(String name)throws CriminalException;
-
     public List<Crime> getCrimeFromArea() throws CriminalException;
-
     public int getNumberOfCrimeStatus(String status) throws CriminalException;
+
+    public int getNumberOfCrimeInCurrentMonth() throws CriminalException;
+
+
 
 
 
