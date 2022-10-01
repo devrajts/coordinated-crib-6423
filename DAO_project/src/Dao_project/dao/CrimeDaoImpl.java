@@ -150,7 +150,7 @@ public class CrimeDaoImpl implements CrimeDao{
     public int getNumberOfCrimeInCurrentMonth() throws CriminalException {
         int result = 0;
         try (Connection cn = DBUtil.provideConnection()) {
-            PreparedStatement ps = cn.prepareStatement("select count(description) Number from crimeDetails where month(dateOfCrime)=9;");
+            PreparedStatement ps = cn.prepareStatement("select count(description) Number from crimeDetails where month(dateOfCrime)=month(current_date());");
 
             ResultSet rs = ps.executeQuery();
 
