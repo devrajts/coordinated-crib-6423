@@ -65,8 +65,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="getCrimeCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Dao_project.usercase.getCrimeCount" />
+    <configuration name="CriminalName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dao_project.usercase.CriminalName" />
       <module name="DAO_project" />
       <extension name="coverage">
         <pattern>
@@ -78,8 +78,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="getStatus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Dao_project.usercase.getStatus" />
+    <configuration name="getCrimeCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dao_project.usercase.getCrimeCount" />
       <module name="DAO_project" />
       <extension name="coverage">
         <pattern>
@@ -107,10 +107,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.getCrimeCount" />
-        <item itemvalue="Application.getStatusCount" />
+        <item itemvalue="Application.CriminalName" />
         <item itemvalue="Application.AreaWiseCrime" />
-        <item itemvalue="Application.getStatus" />
         <item itemvalue="Application.AllCriminals" />
+        <item itemvalue="Application.getStatusCount" />
       </list>
     </recent_temporary>
   </component>
