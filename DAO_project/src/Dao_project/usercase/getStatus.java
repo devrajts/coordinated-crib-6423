@@ -5,7 +5,6 @@ import Dao_project.dao.CrimeDaoImpl;
 import Dao_project.exception.CriminalException;
 
 import java.util.Scanner;
-import java.util.SortedMap;
 
 public class getStatus {
     public static void main(String[] args) {

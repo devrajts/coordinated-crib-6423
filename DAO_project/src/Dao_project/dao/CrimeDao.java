@@ -1,5 +1,4 @@
 package Dao_project.dao;
-
 import Dao_project.exception.CriminalException;
 import Dao_project.model.Crime;
 import Dao_project.model.Criminal;
